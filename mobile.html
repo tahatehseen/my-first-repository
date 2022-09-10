@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/content/logo/T.jpg" type="image/x-icon">
+    <title>@TT Mobile.com</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="/content/logo/TT Mobile (1).png" alt="company logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="info">
+        <div class="overlay"></div>
+        <img class="mobile" src="/content/practice-page-img/mobile.png" alt="Mobile image">
+        <div id="circle">
+            <div class="feature one">
+                <img src="/content/practice-page-img/camera lens.png" alt="camera">
+                <div>
+                    <h1>Camera</h1>
+                    <p>108 MP, LED Flash Wide Angle lens.</p>
+                </div>
+            </div>
+            <div class="feature tow">
+                <img src="/content/practice-page-img/display.png" alt="display">
+                <div>
+                    <h1>Display</h1>
+                    <p>6.5 Mini Drop Fullscreen</p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="/content/practice-page-img/processor.png" alt="processor">
+                <div>
+                    <h1>Processor</h1>
+                    <p>Octa-core (1 x 2.9 GHz Cortex-X1.)</p>
+                </div>
+            </div>
+            <div class="feature four">
+                <img src="/content/practice-page-img/battery.png" alt="battery">
+                <div>
+                    <h1>Battery Life</h1>
+                    <p>(Li-Po Non removable), 5000mAh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+        <img src="/content/practice-page-img/arrow.png" id="up" alt="">
+        <h3>Feature</h3>
+        <img src="/content/practice-page-img/arrow.png" id="down" alt="">
+    </div>
+
+
+
+
+
+    <script>
+        var circle = document.getElementById("circle");
+        var up = document.getElementById("up");
+        var down = document.getElementById("down");
+
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+
+        up.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        down.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+</body>
+</html>
