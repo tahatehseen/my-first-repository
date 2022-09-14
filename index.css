@@ -2,15 +2,15 @@
     font-family: sans-serif;
     margin: 0px;
     padding: 0px;
-    /* background-color: aqua; */
 }
-#main{
+body{
+    background: linear-gradient(90deg, rgb(248, 152, 242) 30%, rgb(169, 160, 240) 70%, rgb(136, 231, 250)95%);
+}    
+.main{
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    /* background: linear-gradient(to left, rgb(99, 99, 240), rgb(251, 112, 182)); */
-    background: linear-gradient(90deg, rgb(248, 152, 242) 30%, rgb(169, 160, 240) 70%, rgb(136, 231, 250)95%);
 }
 #main-2{
     width: 100%;
@@ -18,7 +18,6 @@
     position: relative;
     overflow: hidden;
     background: linear-gradient(to left,  rgb(168, 111, 255)20%, rgb(110, 100, 246)37%,rgb(252, 50, 155)79%);
-    /* background: linear-gradient(90deg, rgba(247,169,242,1) 10%, rgba(208,203,248,1) 70%, rgba(165,239,254,1) 95%); */
 }
 nav{
     width: 90%;
@@ -44,7 +43,7 @@ nav{
     display: inline-block;
     margin: 0 20px;
 }
-.nav-links ul li a{
+.nav-links ul li a,.btn{
     color:white;
     text-decoration: none;
 }
@@ -137,4 +136,62 @@ nav{
     position: absolute;
     left: 0;
     top: 0;
+}
+.card-cover{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: relative;
+    background-color: rgb(255,255,255,0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    height:400px;
+    width: 270px;
+    margin-right: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.info-2{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    padding:2rem;
+    margin-top: 3rem;
+    color:white;
+}
+.card:hover .gradient{
+    opacity: 1;
+}
+.gradient{
+    position: absolute;
+    background: linear-gradient(40deg,  rgb(168, 111, 255)20%, rgb(110, 100, 246)37%,rgb(252, 50, 155)79%,transparent);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.card img{
+    width: 250px;
+    height: 270px;
+}
+.info-2 button{
+    padding: 5px;
+    border-radius: 10px;
+    color:white;
+    background:linear-gradient(45deg,#0703fa,rgb(223, 102, 247) );
+}
+.mid-center{
+    text-align: center;
+    margin-bottom: -130px;
+    margin-top:75px;
+    font-size:x-large;
+}
+.line-change{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
 }
